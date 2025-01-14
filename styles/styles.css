@@ -17,7 +17,6 @@
     font-size: 13px;
     font-weight: 600;
     line-height: 15px;
-    letter-spacing: 0%;
     text-align: center;
     border: none;
     border-radius: 8px;
@@ -26,10 +25,16 @@
     cursor: pointer;
     transition: box-shadow 0.3s ease;
 }
+
 .btn:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
-
+.btn-head:hover{
+    font-size: 13px;
+    font-weight: bold;
+    background-color: rgb(255, 255, 255);
+    color: rgb(82, 195, 3);
+}
 /* Main Section */
 
 /* Hero Section */
