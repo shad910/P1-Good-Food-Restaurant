@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 /* Shared Style */
@@ -21,7 +22,6 @@
   cursor: pointer;
   transition: box-shadow 0.3s ease;
 }
-
 .btn:hover {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
@@ -31,6 +31,7 @@
   background-color: rgb(255, 255, 255);
   color: rgb(82, 195, 3);
 }
+
 /* Main Section */
 
 /* Hero Section */
@@ -53,6 +54,7 @@
 #hero .hero-content {
   width: 685px;
   margin: 0 auto;
+  padding: 10px;
 }
 #hero .hero-content .subtitle {
   opacity: 0.8;
@@ -87,14 +89,10 @@
 
 /* Card-Box-Section */
 #card-box {
-  width: 884px;
   margin: 0 auto;
-  margin-top: 112px;
-  margin-bottom: 123px;
+  margin-top: 120px;
+  margin-bottom: 130px;
 }
-/* #card-box .info{
-
-} */
 #card-box .subtitle {
   opacity: 0.6;
   color: rgb(16, 16, 16);
@@ -114,16 +112,18 @@
   text-align: center;
 }
 .card-container {
-  margin-top: 32px;
+  margin: 0 auto;
+  margin: 32px 0 42px 0;
   display: flex;
-  margin-bottom: 42px;
+  justify-content: center;
+  align-items: center;
 }
 .card-container .card {
   max-width: 284px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  gap: 20px;
+  gap: 16px;
   margin-right: 16px;
   justify-content: center;
   align-items: center;
@@ -148,43 +148,35 @@
   align-items: center;
   gap: 40px;
   margin: 0 auto;
-  margin-top: 100px;
-  margin-bottom: 123px;
+  margin-top: 120px;
+  margin-bottom: 120px;
 }
-
 .image-container {
   width: 400px;
 }
-
 .image-container img {
   object-fit: cover;
   border-radius: 8px;
   width: 100%;
 }
-
 .about-us-info {
   text-align: center;
 }
-
 .about-us-title {
   font-size: 30px;
   font-weight: 700;
-
   margin-bottom: 15px;
 }
-
 .about-us-description {
   font-size: 16px;
   font-weight: 500;
   margin-bottom: 15px;
   color: #101010;
 }
-
 .follow-us {
   font-size: 20px;
   font-weight: 600;
 }
-
 .social-media {
   margin-top: 30px;
   font-size: 30px;
@@ -193,7 +185,6 @@
   align-items: center;
   gap: 20px;
 }
-
 #about-us-last {
   background-image: linear-gradient(
       rgba(255, 255, 255, 0.9),
@@ -205,4 +196,102 @@
   background-position: center;
   padding: 90px;
   margin: 0 auto;
+}
+.line {
+  width: 800px;
+  border: solid 0.5px rgb(211, 200, 200);
+  margin: 0 auto;
+}
+
+/* Responsive Style Section */
+
+/* Responsive styling for small size device */
+@media screen and (max-width: 576px) {
+  /* Hero Section */
+  #hero .hero-content .subtitle {
+    font-size: 15px;
+    line-height: 21px;
+  }
+  #hero .hero-content .title {
+    font-size: 25px;
+    line-height: 34px;
+  }
+  #hero .hero-content .description {
+    font-size: 10px;
+    line-height: 14px;
+  }
+
+  /* Card Box Section */
+  #card-box .subtitle {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+  #card-box .title {
+    font-size: 25px;
+    line-height: 24px;
+  }
+  .card-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .card-container .card {
+    margin-bottom: 30px;
+    margin-right: 0;
+  }
+
+  /* About Us Section */
+  #about-us {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  #about-us-last {
+    padding: 0px;
+  }
+  .line {
+    width: 500px;
+    border: solid 0.5px rgb(211, 200, 200);
+    margin: 0 auto;
+  }
+}
+
+/* Responsive styling for medium size device */
+@media screen and (min-width: 576px) and (max-width: 768px) {
+  #hero .hero-content .subtitle {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  #hero .hero-content .title {
+    font-size: 30px;
+    line-height: 39px;
+  }
+  #hero .hero-content .description {
+    font-size: 15px;
+    line-height: 19px;
+  }
+
+  /* Card Box Section */
+  .card-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .card-container .card {
+    margin-bottom: 35px;
+    margin-right: 0;
+  }
+
+  /* About Us Section */
+  #about-us {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  #about-us-last {
+    padding: 0px;
+  }
+  .line {
+    width: 500px;
+    border: solid 0.5px rgb(211, 200, 200);
+    margin: 0 auto;
+  }
 }
