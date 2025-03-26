@@ -238,6 +238,9 @@
     margin-bottom: 30px;
     margin-right: 0;
   }
+  .card .image-box {
+    width: 260px;
+  }
 
   /* About Us Section */
   #about-us {
@@ -248,10 +251,22 @@
   #about-us-last {
     padding: 0px;
   }
+
+  .image-container {
+    width: 350px;
+  }
   .line {
-    width: 500px;
+    width: 200px;
     border: solid 0.5px rgb(211, 200, 200);
     margin: 0 auto;
+  }
+  .about-us-title {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  #about-us-last {
+    padding: 20px 0 20px 0;
   }
 }
 
